@@ -1,0 +1,40 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 4rem;
+  padding: 0;
+}
+
+div:nth-child(1) {
+  background: powderblue;
+}
+div:nth-child(2) {
+  background: pink;
+}
+div:nth-child(3) {
+  background: darkseagreen;
+}
+div:nth-child(4) {
+  background: ivory;
+}
+div:nth-child(5) {
+  background: peachpuff;
+}
+
+/* 
+Défi : contournement diabolique
+
+L'objectif tient en ces points :
+1- .container doit s'afficher sous forme de carrés de 12rem (3 carrés en largeur)
+2- le 5e div doit se placer à droite dans sa rangée
+3- un contour noir de largeur 1rem doit entourer l'ensemble des éléments de la grille.
+
+*/
+
+
+/* Correction */
+
+
+
+

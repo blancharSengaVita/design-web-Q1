@@ -1,0 +1,40 @@
+/* reset */
+
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+
+/* deco */
+
+body {
+  max-width: 900px;
+  margin: auto;
+  padding: 3rem;
+  background: #f4f0f2;
+  color: #333;
+  font-size: 1.6em;
+  line-height: 1.5;
+  font-family: georgia, serif;
+}
+
+div {
+  padding: 0 1em;
+  background: #fff;
+  border: 1px solid gray;
+  border-radius: 4px;
+}
+h1 {
+  margin: 1.5em 0;
+  color: #345;
+  text-shadow: 0 1px 1px #fff;
+  text-align: center;
+}
+
+/* ----------------------------------- */
+/*   Titré décoré                      */
+/* ----------------------------------- */
+
+/* Affichez une ligne de décoration de part et d'autre du titre */

@@ -1,0 +1,60 @@
+/* Objectif */
+
+/*
+Les spécifications de notre micro-grille sont celles-ci: 
+• le nombre de colonnes doit être équivalent au nombre d'éléments disponibles (et s'adapter si ce nombre change),
+• les enfants doivent toujours se répartir uniformément sans nécessiter de leur fixer une taille,
+• tous les éléments demeurent sur une même ligne horizontale,
+il ne doit pas y avoir de retour à la ligne,
+• si le besoin s'en fait sentir, il doit être possible d'espacer les éléments à l'aide d'une gouttière.
+
+Concrètement : créez une micro-grille (deux méthodes Grid Layout possibles)
+
+*/
+
+
+/*.autogrid {*/
+/*  display: grid;*/
+/*  grid-template-columns: repeat(auto-fit, minmax(0, 1fr));*/
+/*  grid-gap: 0.5em;*/
+/*}*/
+
+.autogrid {
+  display: grid;
+  grid-gap: 0.5em;
+  /*grid-auto-columns: 1fr;*/
+  grid-auto-flow: column;
+}
+
+
+
+
+/* Reset / Deco */
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 2rem;
+  background: #fff;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-size: 1.8rem;
+}
+
+.autogrid {
+  border: 2px dotted orange;
+  padding: .5rem;
+  margin-bottom: 2rem;
+}
+
+div {
+  padding: 1rem;
+  color: #fff;
+  background: peru;
+}

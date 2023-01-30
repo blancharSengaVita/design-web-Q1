@@ -1,0 +1,72 @@
+@charset "UTF-8";
+/* Consignes */
+/*
+1- Créer un contexte de Grid sur .grid-container avec une gouttière de 1rem
+2- Le nombre de colonnes est variable : il contiendra autant de colonnes de taille 1fr et de 250px minimum.
+3- Les images devront s'adapter à leur cellule (indice : stretch).
+   Trouver un moyen pour qu'elles ne soient pas déformées et conservent leur ratio.
+   BONUS : utiliser les classes .fit-left et .fit-right pour afficher la bonne portion de l'image
+4- Les images de classe "portrait" doivent occuper deux rangées de hauteur.
+*/
+.grid-container {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-auto-flow: dense;
+  align-items: stretch;
+  justify-items: stretch;
+}
+
+img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  /*object-position: center;*/
+}
+
+.portrait {
+  grid-row: span 2;
+}
+
+.fit-left {
+  -o-object-position: left;
+     object-position: left;
+}
+
+.fit-right {
+  -o-object-position: right;
+     object-position: right;
+}
+
+/* Reset */
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 1rem;
+  background: #fff;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-size: 1.8rem;
+  line-height: 1.5;
+  transition: 0.2s;
+}
+
+.black {
+  background: black;
+}
+
+.grid-container img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  filter: grayscale(100%);
+  transition: filter 0.2s;
+}
+
+.grid-container img:hover {
+  filter: grayscale(0%);
+}

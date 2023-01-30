@@ -1,0 +1,24 @@
+/* ----------------------------- */
+/*   Echauffement                */
+/* ----------------------------- */
+/* 
+1- le bloc Aside doit faire 200px de large
+2- le bloc Content doit être placé à droite de Aside et occuper l'espace restant (fluide)
+3- un espace de 10px doit séparer les 2 blocs
+*/
+
+body {
+	margin: 0;
+	padding: 10px 30px;
+	background: #F1EFE2;
+	font-family: "Century Gothic", helvetica, arial, sans-serif;
+}
+div {
+	color: #fff;
+}
+.aside {
+	background: orange;
+}
+.content {
+	background: olivedrab;
+}

@@ -1,0 +1,21 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 4rem;
+  padding: 0;
+}
+
+/* 
+Défi : hauteur perfide
+
+L'objectif tient en ces points :
+1- la grille doit s'afficher en 12 colonnes égales (c'est déjà le cas)
+2- chaque item doit se placer sous le précédent et occuper les 9 premières colonnes
+3- un bloc de couleur rose (hotpink) doit occuper l'espace laissé libre... et s'étaler sur toute la hauteur quel que soit le nombre d'items à sa gauche.
+
+*/
+
+
+/* Correction */
+

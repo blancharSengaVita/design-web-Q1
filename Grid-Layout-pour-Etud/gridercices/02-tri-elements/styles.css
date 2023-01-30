@@ -1,0 +1,118 @@
+/* ----------------------------- */
+/*   Tri d'éléments              */
+/* ----------------------------- */
+
+/*
+1- Distinguez visuellement les types de liens :
+  * les liens vers un .doc ont une couleur de fond orange
+  * les liens vers un .xls ont une couleur de fond olivedrab
+  * les liens vers un .pdf ont une couleur de fond hotpink
+
+2- Créez une grille de 3 colonnes égales :
+  * les liens vers un .doc s'affichent en première colonne
+  * puis doivent s'afficher les liens vers un .xls
+  * et en dernière colonne les liens vers un .pdf
+  Remplir les emplacements vides !
+
+3- Étiquetez les groupes :
+  * des étiquettes "doc", "xls" et "pdf" doivent apparaître au début de chaque lien
+
+BONUS : seule la première étiquette de chaque format doit apparaître.
+*/
+
+/* Reset et Déco */
+
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: inherit;
+}
+
+body {
+  max-width: 80%;
+  margin: 2rem auto;
+  background: #fff;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-size: 1.8rem;
+  line-height: 1.5;
+}
+
+h1 {
+  margin-top: 20px;
+  margin-bottom: 40px;
+  color: #345;
+  text-shadow: 1px 1px 1px #fff;
+  font-weight: normal;
+}
+
+a {
+  display: block;
+  padding: 6px 12px;
+  color: #fff;
+  text-decoration: none;
+  background: #999;
+}
+
+[href$=".xls"] {
+  background-color: olivedrab;
+  grid-column: 2;
+}
+
+[href$=".doc"] {
+  background-color: orange;
+  grid-column: 1;
+}
+
+[href$=".pdf"] {
+  background-color: pink;
+  grid-column: 3;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /*grid-template-areas: ". . ."; permet d'avoir du contenu qui s'adapte à la taille genre si je mets un lorem ipsum il s'afficher contraiment à la solution d'en haut*/
+  grid-gap: 10px;
+  grid-auto-flow: row dense;
+}
+
+
+[href$=".xls"]:before, [href$=".doc"]:before, [href$=".pdf"]:before {
+  display: inline-block;
+  transform: translate(-1.5em, -1em);
+  /*position: relative;*/
+  /*top: -15px;*/
+  /*left: -20px;*/
+  background-color: black;
+  margin-right: 10px;
+  padding: 5px;
+  border-radius: 25%;
+}
+
+[href$=".xls"]:before {
+  content: '.xls';
+}
+
+[href$=".doc"]:before  {
+  content: '.doc';
+}
+
+[href$=".pdf"]:before  {
+  content: '.pdf';
+}
+
+a[href$=".doc"] ~[href$=".doc"]:before {
+  visibility: hidden;
+}
+
+a[href$=".pdf"] ~[href$=".pdf"]:before {
+  visibility: hidden;
+}
+a[href$=".xls"] ~[href$=".xls"]:before {
+  visibility: hidden;
+}
+

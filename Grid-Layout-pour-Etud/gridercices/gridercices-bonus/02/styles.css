@@ -1,0 +1,47 @@
+/*
+Objectif : reproduisez l'image jointe aussi fidèlement que possible
+*/
+
+
+
+/* Reset / Deco */
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: inherit;
+}
+
+body {
+  max-width: 80%;
+  margin: 2rem auto;
+  background: #fff;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-size: 1.8rem;
+}
+
+div {
+  padding: 1rem;
+  color: #fff;
+}
+
+div {
+  background: tan;
+}
+
+div:nth-child(2) {
+  background: peru;
+}
+
+/* Counter */
+
+div {
+  counter-increment: number;
+}
+
+div::before {
+  content: counter(number);
+}

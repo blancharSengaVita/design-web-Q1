@@ -1,0 +1,50 @@
+/* Alignez-moi ces éléments de formulaire ! */
+
+
+/* deco */
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  padding: 2rem;
+  background: #fff;
+  font-family: arial, sans-serif;
+  font-size: 1.8em;
+}
+
+form {
+  border-bottom: 2px solid orange;
+}
+
+input {
+  padding: .4em .4em;
+  font-size: inherit;
+}
+
+input[type="text"] {
+  border: 2px solid #ccc;
+}
+
+input[type="submit"] {
+  border: 0;
+  background: #ddd;
+}
+
+input[type="date"] {
+  border: 0;
+  font-size: .8em;
+  background: #eee;
+}
+
+button {
+  border: 3px solid gray;
+  background: #eee;
+}
+
+/* ma solution */
+
+form{
+  display: flex;
+}

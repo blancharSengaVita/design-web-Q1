@@ -1,0 +1,67 @@
+/* Objectif */
+
+/*
+Base : 
+- .container doit générer une grille de 2 colonnes explicites. 
+- La taille de la première colonne est 15ch, 
+- et la seconde est de 50%
+
+Etape 1 : Rangées implicites
+- la hauteur des rangées *implicites* est de 8em
+
+Etape 2 : Rangées explicites 
+- la hauteur des rangées *explicites* est de "auto"
+
+Etape 3 (Attendez le feu vert !) : hauteurs adaptables
+- ajoutez plein de contenu à l'élément "footer"
+- corrigez en proposant une hauteur de rangée automatique "adaptée" : 8em de préférence, mais jamais moins que la densité de contenu
+
+*/
+
+/* Correction */
+
+
+
+/* Reset / Deco */
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: inherit;
+}
+
+body {
+  max-width: 80%;
+  margin: 2rem auto;
+  background: #fff;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-size: 1.8rem;
+}
+
+footer {
+  padding: 1em;
+  background: chocolate;
+  color: #fff;
+}
+
+aside {
+  padding: 1em;
+  background: peru;
+  color: #fff;
+}
+
+.content {
+  padding: 1em;
+  background: tan;
+  color: #fff;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 15ch 50%;
+  grid-template-rows: auto;
+  grid-auto-rows: minmax(8em, auto);
+}

@@ -1,0 +1,73 @@
+/*
+Ce module de 5 étapes est une simple liste numérotée (<ol> <li>).
+L'étape en cours est marquée d'une classe “.is-current” et toutes les étapes suivantes sont semi-opacifiées.
+Voici ce qu'il faut mettre en oeuvre :
+  - flexbox pour la disposition générale
+  - flex:1 sur les <li> pour les répartir,
+    ainsi que sur les li::after pour générer la ligne continue ou discontinue entre les étapes
+  - CSS counters pour la génération et l'affichage des chiffres
+  - pas de JavaScript ni d'images
+  - compatibilité sur les navigateurs classiques (IE10+)
+*/
+
+/* deco */
+* {
+    box-sizing: border-box;
+}
+body {
+    padding: 2em;
+    font-size: 1.6em;
+    font-family: helvetica, arial, sans-serif;
+}
+h1 {
+    margin: 0 0 1em;
+    color: #345;
+    text-align: center;
+    font-family: georgia, "trebuchet ms", arial, serif;
+}
+.discrete {
+    margin-top: 3em;
+    font-size: 1.2rem;
+    color: #678;
+    line-height: 1.5;
+}
+
+/*EXERCICES*/
+.tunnel {
+    display: flex;
+    counter-reset: compteur;
+    padding-left: 0;
+}
+.tunnel li {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    color: white;
+    counter-increment: compteur ;
+}
+.tunnel li+li{
+    flex:1;
+}
+.tunnel li::after{
+    content: counter(compteur);
+    text-align: center;
+    width: 2em;
+    height: 2em;
+    line-height: 2em; /*centre la boite verticalement*/
+    background-color: hotpink;
+    border-radius: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+
+}
+.tunnel li+li::before{
+    content:"";
+    flex:1; /*la largeur de la bordure s'adapte à la taille du li*/
+    display: block;
+    border-bottom: 2px solid hotpink;
+}
+
+.tunnel .is-current ~ li::before{
+    opacity: 0.5;
+    border-bottom: 2px dotted hotpink;
+}

@@ -1,0 +1,67 @@
+/* Decoration */
+
+body {
+  margin: 0;
+  background: #fff;
+  font-family: "Century Gothic", helvetica, arial, sans-serif;
+  font-size: 1.1em;
+}
+header, nav, section, footer {
+  padding: 10px;
+  margin: 0;
+  border: 2px solid #fff;
+  border-radius: 10px;
+  color: #fff;
+}
+header {
+  background: dodgerblue;
+  text-align: center;
+}
+nav {
+  background: orange;
+}
+nav a {
+  display: block;
+  padding: .5em 1em;
+  color: #fff;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(255,255,255,.3);
+}
+section {
+  background: hotpink;
+}
+footer {
+  background: olivedrab;
+  text-align: center;
+}
+
+/* Layout : À VOUS ! */
+
+body{
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+nav{
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+
+.wrapper {
+  /*display: flex;*/
+  /*flex: 1;*/
+}
+
+.content{
+  flex: 3; /* Si on veut que le contenu prennent 3/4 de et le nav 1/4
+  */
+}
+
+
+footer {
+  margin-top: auto;
+}
+

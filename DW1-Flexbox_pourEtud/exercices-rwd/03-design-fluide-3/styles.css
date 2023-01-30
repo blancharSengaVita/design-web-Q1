@@ -1,0 +1,91 @@
+/* ----------------------------- */
+/*   Récap design fluide         */
+/* ----------------------------- */
+
+/*
+OBJECTIF :
+- positionner les trois blocs .aside, .info, .content côte à côte
+- .aside doit faire 200px de large
+- .info doit faire 25% de large
+- .content doit occuper l'espace restant
+- une marge de 10px doit séparer les 3 blocs .aside, .info et .content
+- footer doit toujours se positionner en bas du bloc le plus long 
+
+TECHNIQUES :
+1- en utilisant le positionnement flottant
+(BONUS : interdit d'utiliser "clear" sur footer)
+2- en utilisant inline-block
+3- en utilisant les tableaux CSS
+4- autre technique ?
+
+*/
+
+body {
+	margin: 0;
+	padding: 2em;
+	background: #F1EFE2;
+	font-family: "Century Gothic", helvetica, arial, sans-serif;
+}
+.main,
+p,
+footer{
+	padding: 8px;
+	margin: 0;
+	border-radius: 10px;
+	color: #fff;
+}
+.main {
+	background: #fff;
+}
+.aside {
+	background: orange;
+}
+.info {
+	background: hotpink;
+}
+.content {
+	background: olivedrab;
+}
+footer {
+	background: gray;
+}
+
+/* ----------------------------- */
+/*   Correction                  */
+/* ----------------------------- */
+
+
+/* placer ici les styles globaux */
+
+.aside {
+	
+}
+.info {
+	
+}
+.aside,
+.info {
+	
+}
+
+/* 1- version flottants */
+
+
+
+/* 2- version inline-block */
+
+
+
+
+/* 3- version tableaux CSS */
+
+
+
+/* 4- autre version ? */
+
+
+
+
+
+
+

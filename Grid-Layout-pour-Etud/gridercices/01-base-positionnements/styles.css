@@ -1,0 +1,89 @@
+/* Objectif */
+
+/*
+Base : 
+- .container doit générer une grille de 2 colonnes. - La taille de la première colonne est 15ch, 
+- et la seconde occupe l'espace restant
+
+Etape 1 : placement automatique
+- footer doit occuper les deux colonnes en largeur (en placement automatique)
+
+Etape 2 : placement explicite
+- aside et .content doivent être placés explicitement
+- footer doit occuper les deux colonnes en largeur (en placement explicite)
+
+Etape 3 : placement zone nommées 
+- aside et .content doivent être placés dans des areas
+- footer doit occuper les deux colonnes en largeur (en areas)
+
+*/
+
+/* Correction */
+
+
+/* Reset / Deco */
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: inherit;
+}
+
+body {
+  max-width: 80%;
+  margin: 2rem auto;
+  background: #fff;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-size: 1.8rem;
+}
+
+footer {
+  padding: 1em;
+  background: chocolate;
+  color: #fff;
+}
+
+aside {
+  padding: 1em;
+  background: peru;
+  color: #fff;
+}
+
+.content {
+  padding: 1em;
+  background: tan;
+  color: #fff;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 15ch 1fr;
+
+  grid-template-areas: "aside content" /* vu qu'on les utilise pas on peut les nommé comme ça ".." */
+                       "footer footer";
+}
+
+
+/*aside {*/
+/*  grid-area: aside;*/
+/*}*/
+
+/*.content {*/
+/*  grid-area: content;*/
+/*}*/
+
+
+/*solution sans grid-template-ares*/
+/*footer {*/
+/*  grid-column: span 2;*/
+/*}*/
+
+
+footer {
+  grid-area: footer;
+}
+
+

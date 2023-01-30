@@ -1,0 +1,58 @@
+/* Grid Layout */
+/* 
+- Créez une grille virtuelle de 2 colonnes : une 1re de 200px de large et une 2e de 300px de large
+- Placez-y explicitement les grid items pour correspondre au rendu
+	en utilisant les grid areas
+*/
+
+/* layout */
+
+.hagrid {
+	grid-template-columns: 100px 300px;
+	grid-template-areas: "";
+}
+
+
+
+/* Decoration */
+
+* {box-sizing: border-box}
+body {
+	margin: 20px;
+	background: #fff;
+	font-family: "Century Gothic", helvetica, arial, sans-serif;
+	font-size: 1.2em;
+	font-weight: bold;
+}
+.hagrid {
+	background: beige;
+	border: 3px dotted orange;
+	margin-bottom: 2em;
+}
+div, nav, section, article, aside, header, footer {
+	padding: 4em 2em;
+	color: #fff;
+}
+nav, footer{
+	padding-top: 2em;
+	padding-bottom: 2em;
+}
+nav {
+	background: green;
+}
+header {
+	background: orange;
+}
+aside {
+  background: dodgerblue;
+}
+footer {
+	background: purple;
+}
+
+h1 {
+	margin: 0 0 1em;
+	color: #345;
+	text-align: center;
+  	font-family: georgia, "trebuchet ms", arial, serif;
+}

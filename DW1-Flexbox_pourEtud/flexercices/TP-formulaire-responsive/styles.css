@@ -1,0 +1,99 @@
+/* Decoration */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 1000px;
+  margin: auto;
+  padding: 1em;
+  color: #333;
+  background: beige;
+  font-size: 1.4em;
+  font-family: georgia, "trebuchet ms", arial, serif;
+}
+
+h1 {
+  margin-top: 20px;
+  margin-bottom: 40px;
+  color: #345;
+  text-shadow: 1px 1px 1px #fff;
+}
+
+form>div {
+  padding: 1em;
+  background: #fff;
+  border: 1px solid gray;
+  border-radius: 4px;
+}
+
+input, textarea {
+  padding: .3em;
+  border: 1px solid #555;
+  border-radius: 4px;
+  font-family: inherit;
+  font-size: inherit;
+  background: rgba(0, 0, 0, .02);
+}
+
+input:focus, textarea:focus {
+  outline: none;
+}
+
+input[type="submit"] {
+  padding: .3em 1em;
+  background: #555;
+  border: none;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+label {
+  margin-right: .5em;
+  text-align: right;
+}
+
+input[type="submit"] {
+  margin-left: auto;
+}
+
+textarea {
+  resize: vertical;
+  color: #999;
+}
+
+div>p:first-child {
+  margin-top: 0;
+}
+
+div>p:last-child {
+  margin-bottom: 0;
+}
+
+small {
+  font-size: 0.8rem;
+  color: #999;
+}
+
+
+/*
+OBJECTIF : designer un formulaire fluide / responsive
+
+Sur écran de plus de 600px
+
+1- positionner 2 div principaux :
+  * les 2 div enfants du formulaire doivent s'afficher l'un à côté de l'autre et occuper chacun la moitié de l'espace
+  * une marge de 1em doit séparer ces 2 div
+
+2- rendre les champs input fluides
+  * tous les input sauf le submit doivent occuper l'espace restant dans leur ligne
+
+3- rendre le textarea fluide
+  * le textarea doit occuper toute la largeur et la hauteur disponible
+
+*/
+
+
+/* Correction */

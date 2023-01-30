@@ -1,0 +1,37 @@
+/* ----------------------------- */
+/*   Design fluide 1             */
+/* ----------------------------- */
+
+/* 
+1- aligner les trois paragraphes .aside, .info et .content de telle sorte que :
+* .aside et .info occupent chacun une largeur de 200px
+* .content occupe l'espace restant dans la fenêtre
+* un espace de 5px entre chaque bloc apparaît
+* le pied de page .footer s'affiche sous le bloc le plus long, quel qu'il soit
+*/
+
+body {
+	margin: 0;
+	padding: 2em;
+	background: #F1EFE2;
+	font-family: "Century Gothic", helvetica, arial, sans-serif;
+}
+p {
+	padding: 5px;
+	margin: 0;
+	border: 2px solid #fff;
+	border-radius: 10px;
+	color: #fff;
+}
+.aside {
+	background: orange;
+}
+.info {
+	background: hotpink;
+}
+.content {
+	background: olivedrab;
+}
+.footer {
+	background: gray;
+}

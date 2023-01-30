@@ -1,0 +1,65 @@
+/* SOURCE : https://tympanus.net/codrops/css_reference/grid/ */
+/* Responsive Grid with Differently Sized Items */
+/* 
+- Grid’s auto-placement algorithm can place grid items even if they are not uniformly sized.
+  In addition, we can specify whether we want the grid items to fill up in order or let the browser
+  try to fill in blank spaces in the grid with items that can fit.
+- We can use the grid-auto-flow property to control which algorithm is being used.
+*/
+/*
+- La grille doit générer autant que colonnes que nécessaire pour que les grid items s'ajustent à la largeur du parent.
+- La largeur minimum d'un grid item doit être de 15ch.
+- Certains grid items s'étendent sur plusieurs cellules (voir rendu)
+- Quand la case à cocher est cochée, passer en mode dense (voir rendu2)
+*/
+
+/* layout */
+
+.container {
+  margin: 40px auto;
+  max-width: 700px;
+
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15ch, 1fr));
+  grid-gap: 10px;
+  grid-auto-flow: row dense;
+}
+
+.g {
+  grid-row : span 2;
+  grid-column: span 3;
+}
+
+.c {
+  grid-row: span 2 ;
+  grid-column: span 1 ;
+}
+
+.n {
+  grid-column: span 2;
+}
+
+.j {
+  grid-column: span 3;
+}
+
+
+/* deco */
+
+body {
+  background-color: #F5F5F5;
+  color: #555;
+  font-size: 1.1em;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  margin: 1em 10%;
+  max-width: 60em;
+}
+
+.grid__item {
+  background-color: lightgreen;
+  padding: 1em;
+}
+

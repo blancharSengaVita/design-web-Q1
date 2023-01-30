@@ -1,0 +1,42 @@
+/* Objectif : centrage */
+/*
+- Centrer horizontalement et verticalement l'élément div dans la page
+*/
+
+/* deco */
+
+body {
+  margin: 0;
+  font-family: arial, sans-serif;
+  background: pink;
+}
+
+div {
+  background: olivedrab;
+  color: #fff;
+  padding: 1em;
+  border-radius: 10px;
+  font-size: 3rem;
+}
+
+/**/
+
+body {
+  min-height: 100vh;
+  display: flex;
+}
+
+div {
+  margin: auto;
+}
+
+/*body {*/
+/*  min-height: 100vh;*/
+/*  display: flex;*/
+/*  justify-content: center;*/
+/*  align-items: center;*/
+/*}*/
+
+/*div {*/
+/*  margin: auto;*/
+/*}*/

@@ -1,0 +1,39 @@
+
+/* ----------------------------- */
+/*   Multicolonnes               */
+/* ----------------------------- */
+/*
+
+1- Le premier paragraphe après le titre doit être en italique
+2- Tous les autres doivent s'afficher sur deux colonnes, de couleur noire mais sans couleur d'arrière-plan. Un espace de 50px entre chaque colonne ainsi qu'un trait de séparation de couleur #ccc doivent apparaître
+
+*/
+
+body {margin:0; padding:10px 40px; background:#F1EFE2;
+	font-size: 1.6em;
+	font-family: georgia, "trebuchet ms", arial, serif;}
+h1 {margin-top: 20px; margin-bottom: 40px;
+	color: #345; text-shadow: 1px 1px 1px #fff;}
+h2 {color: #678; text-shadow: 1px 1px 1px #fff; font-size:1.1em}
+p {padding: 10px; background: #6B9A49; color: #fff;}
+
+/*fais par moi*/
+
+p {
+	column-count: 2;
+	column-gap: 50px;
+	column-rule: solid 1px #ccc;
+}
+
+h1 + p {
+	font-style: italic;
+
+}
+
+div p {
+	color: #000;
+	background: none;
+	margin-top: 0;
+}
+
+

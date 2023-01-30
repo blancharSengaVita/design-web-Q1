@@ -1,0 +1,76 @@
+
+
+body {
+  display: grid;
+  grid-template-areas:
+          "header header header"
+          "aside main info "
+          "footer footer footer";
+}
+
+header {
+  grid-area: header;
+}
+
+aside {
+  grid-area: aside;
+}
+
+main {
+  grid-area: main;
+}
+
+.info {
+  grid-area: info;
+}
+
+footer {
+  grid-area: footer;
+}
+
+/* Reset / Deco */
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-size: 1.8rem;
+  padding: 1rem;
+}
+
+body > * {
+  padding: 1rem;
+  color: #333;
+  background: tan;
+  border: 1px solid peru;
+}
+
+.logo {
+  margin: 0;
+}
+.logo img {
+  width: 200px;
+  fill: peru;
+}
+
+.nav a {
+  background: #975d24;
+  color: #fff;
+  padding: .5rem .8rem;
+  text-decoration: none;
+}
+
+body > :not(.header)[class]::before {
+  content: attr(class);
+  display: inline-block;
+  font-size: .7em;
+  transform: translate(-.6em, -1.1em);
+  color: #975d24;
+}

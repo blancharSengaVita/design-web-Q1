@@ -1,0 +1,101 @@
+/* ----------------------------- */
+/*   Tri d'éléments              */
+/* ----------------------------- */
+
+/*
+1- Distinguez visuellement les types de liens :
+  * les liens vers un .doc ont une couleur de fond orange
+  * les liens vers un .xls ont une couleur de fond olivedrab
+  * les liens vers un .pdf ont une couleur de fond hotpink
+
+2- Rassemblez les types de liens :
+  * les liens vers un .doc s'affichent en premiers
+  * puis doivent s'afficher les liens vers un .xls
+  * et enfin les liens vers un .pdf
+
+BONUS : Séparez les types de liens :
+  * un espace de 1.5em doit séparer chaque groupe de liens
+
+MAXIBONUS : étiquetez les groupes :
+  * des étiquettes "doc", "xls" et "pdf" doivent apparaître une seule fois, au début de chaque groupe
+
+*/
+
+/* déco */
+
+body {
+  margin: 0;
+  padding: 1.5em;
+  background: #F1EFE2;
+  font-size: 1.6em;
+  font-family: georgia, serif;
+}
+
+h1 {
+  margin-top: 0;
+  margin-bottom: 40px;
+  color: #345;
+  text-shadow: 1px 1px 1px #fff;
+}
+
+div {
+  width: 80%;
+}
+
+a {
+  display: block;
+  margin-top: 6px;
+  padding: 6px 12px;
+  color: #fff;
+  text-decoration: none;
+  background: #999;
+}
+
+div {
+  display: flex;
+  flex-direction: column;
+}
+
+a[href $=".doc"] {
+  background-color: orange;
+  order: -1;
+}
+
+a[href $=".xls"] {
+  background-color: olivedrab;
+  transform: translate(0, 1.5em);
+}
+
+a[href $=".pdf"]{
+  background-color: hotpink;
+  order: 1;
+  transform: translate(0, 3em);
+}
+
+a[href]:before {
+  color: white;
+  opacity: 70%;
+  font-size: 10px;
+  margin-right: 1.5em;
+}
+
+a[href $=".doc"]:before {
+  content: "doc.";
+}
+a[href $=".pdf"]:before {
+  content: "pdf.";
+}
+a[href $="xls"]:before {
+  content: "xls";
+}
+
+a[href$=".doc"] ~ [href$=".doc"]:before {
+  visibility: hidden;
+}
+
+a[href$=".pdf"] ~ [href$=".pdf"]:before {
+  visibility: hidden;
+}
+a[href$=".xls"] ~ [href$=".xls"]:before {
+  visibility: hidden;
+}

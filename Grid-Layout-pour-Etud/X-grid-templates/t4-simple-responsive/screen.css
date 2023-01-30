@@ -1,0 +1,36 @@
+/* SOURCE : https://tympanus.net/codrops/css_reference/grid/ */
+/* Simple Responsive Grid Layout */
+/* 
+- A common approach to creating a responsive grid layout is to use media queries at appropriate breakpoints to vary the width of the grid items so content in each grid item is displayed in an optimal manner. For example, if we wanted 2 columns when the screen size was larger than 480px, 3 columns when the screen size was larger than 720px and so on, we would end up having to write multiple media queries.
+- With Grid, we can simply specify the minimum width of each grid item, then let the browser generate enough columns to fit the width of the container. The minmax() function also allows us to specify a fluid width for the maximum value, so in instances where there is excess free space in the grid container, the grid items can grow to take up that additional space. This means the grid items will always take up the width of the grid container.
+- The markup required for such a layout is quite simple, with all the grid items wrapped in a single grid container.
+- Using the auto-fill value within the repeat() notation tells the browser to generate as many columns as necessary to fit the grid items within the width of the grid container. In this case, we’ve set the minimum width of a grid item to be 15ch.
+*/
+
+/* layout */
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15ch, 1fr));
+  grid-gap: 10px;
+}
+
+.a {
+
+}
+
+/* deco */
+
+body {
+  background-color: #F5F5F5;
+  color: #555;
+  font-size: 1.1em;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  margin: 1em 10%;
+  max-width: 60em;
+}
+
+.grid__item {
+  background-color: lightgreen;
+  padding: 1em;
+}

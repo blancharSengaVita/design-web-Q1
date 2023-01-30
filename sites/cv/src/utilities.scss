@@ -1,0 +1,79 @@
+/*----  FONT  ----*/
+
+//font-size
+:root {
+  font-size: 0.875rem;//14 pixels
+}
+
+.text-56{
+  font-size: 4em;
+}
+
+.text-42{
+  font-size: 3em;
+}
+
+.text-21px{
+  font-size: 1.5rem;
+}
+
+.text-18px{
+  font-size: 1.25rem;
+}
+
+.text-16{
+  font-size: 1.14rem;
+}
+
+.text-base{
+  font-size: 1rem;
+}
+
+//font-family
+:root {
+  font-family: "Poppins",-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Open Sans,Helvetica Neue,sans-serif;
+}
+
+.text-mono {
+  font-family: "Anonymous Pro", Courier, monospace;
+}
+
+//font-style
+.text-italic {
+  font-style: italic;
+}
+
+//font-weight
+.text-bold {
+  font-weight: 700;
+}
+
+.text-semi-bold {
+  font-weight: 600;
+}
+
+.text-medium {
+  font-weight: 500;
+}
+
+.text-light {
+  font-weight: 300;
+}
+
+//font
+
+/*----  COLOR  ----*/
+
+::selection {
+  background: #fd0;
+}
+
+.text-black{
+  color: black;
+}
+
+.text-white{
+  color : white;
+}
+
+

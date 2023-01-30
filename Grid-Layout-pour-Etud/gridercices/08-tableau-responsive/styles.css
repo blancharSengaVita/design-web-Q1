@@ -1,0 +1,72 @@
+body {
+  padding: 2rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-size: 1.2em;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid gray;
+  empty-cells: hide;
+}
+
+th {
+  text-align: left;
+}
+
+td,
+th {
+  padding: .5em 1em;
+}
+
+tr:nth-child(even) {
+  background: #f9f9f9;
+}
+
+.small {
+  width: 3rem;
+}
+
+.medium {
+  width: 4rem;
+}
+
+.table-name {
+  font-weight: bold;
+}
+
+.table-actions {
+  text-align: right;
+}
+
+/* Tableau Responsive Mobile First avec Grid Layout */
+/*
+
+ETAPE 1 : on "casse" le tableau en vue mobile (inférieure égale à 890px)
+
+1- Chaque rangée (tr) devient un Grid Container
+2- On cache l'entête du tableau (thead)
+3- Au début de chaque cellule ayant un attribut data-value, afficher le contenu de cet attribut.
+*/
+
+
+
+
+/*
+ETAPE 2 : on réorganise avec Grid Layout (entre 601px et 890px de large)
+
+1- Générer 5 colonnes dans la grille. La première a une largeur de 4em et la dernière 5em, toutes les autres se répartissent l'espace disponible.
+2- Nommer des zones de grille selon le schéma suivant : 
+
+"id name name name actions" 
+"id job  job  job  actions" 
+"id s    w    qi   actions"
+
+3- Placer chaque contenu dans sa zone respective (par ex. .table-id va dans la zone id)
+4- Les actions (.table-actions) sont centrés verticalement dans leur zone
+
+*/
+
+
+

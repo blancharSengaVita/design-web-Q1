@@ -1,0 +1,103 @@
+/* Global Layout */
+/* 
+- Créez une grille virtuelle de
+	- 2 lignes : une première de 100px de haut et une 2e de 200px de haut et
+	- 2 colonnes : une 1re de 250px de large et une 2e de 200pc de large
+- Placez-y explicitement nav section article et aside pour correspondre au rendu
+	 en utilisant les grid lines et le span
+*/
+
+/* Layout */
+
+.container {
+    display: grid;
+    grid-template:
+            "header header" 1fr
+            "nav article" 10fr
+            "footer footer" 1fr / 200px 1fr;
+}
+
+header {
+    grid-area: header;
+}
+
+nav {
+    grid-area: nav;
+}
+
+article {
+    grid-area: article;
+}
+
+footer {
+    grid-area: footer;
+}
+
+
+/* Decoration */
+
+* {
+    box-sizing: border-box
+}
+
+body {
+    margin: 20px;
+    background: #fff;
+    font-family: "Century Gothic", helvetica, arial, sans-serif;
+    font-size: 1.2em;
+}
+
+.container {
+    background: beige;
+    border: 3px dotted orange;
+    margin-bottom: 2em;
+}
+
+div, nav, section, article, aside, header, footer {
+    padding: 10px;
+    color: #fff;
+}
+
+nav {
+    background: dodgerblue;
+}
+
+section {
+    background: hotpink;
+}
+
+article {
+    background: orange;
+}
+
+aside {
+    background: olivedrab;
+}
+
+header {
+    background: gray;
+}
+
+footer {
+    background: crimson;
+}
+
+div:nth-of-type(3) {
+    background: olivedrab;
+}
+
+div:nth-of-type(4) {
+    background: hotpink;
+}
+
+div:nth-of-type(5) {
+    background: slategray;
+}
+
+h1 {
+    margin: 0 0 1em;
+    color: #345;
+    text-align: center;
+    font-family: georgia, "trebuchet ms", arial, serif;
+}
+

@@ -1,0 +1,70 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+  background: #F1EFE2;
+  font-size: 1.4rem;
+  line-height: 1.4;
+  font-family: georgia, sans-serif;
+}
+
+.pictos {
+  text-align: center;
+}
+.picto-item {
+  margin: 0 .2rem;
+  color: #413219;
+  background: #e1d3bd;
+  font-size: 3rem;
+  text-decoration: none;
+}
+img {
+  width: 4rem;
+  height: 4rem;
+}
+
+/* ----------------------------------- */
+/*   Objectif : centrage d'icônes      */
+/* ----------------------------------- */
+
+/* Partie 1 */
+/*
+1- Appliquez une largeur et une hauteur de 8rem aux .picto-item
+2- Les pictos-items doivent être ronds
+*/
+.picto-item {
+  width: 8rem;
+  height: 8rem;
+  border-radius: 50%;
+}
+/* Partie 2 */
+/*
+1- Centrez le picto SVG au milieu du lien .picto-item
+*/
+
+.pictos{
+  display: flex;
+  justify-content: center;
+}
+
+.picto-item{
+  display: flex;
+}
+
+img[src$=".svg"] {
+  margin: auto;
+}
+
+/*le prof*/
+
+/*.picto-item{*/
+/*  display: inline-flex; !* contexte flex qui se comporte comme un élement inline*!*/
+/*  justify-content: center;*/
+/*  align-items: center;*/
+/*}*/
+
+

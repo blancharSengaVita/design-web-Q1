@@ -1,0 +1,47 @@
+/* Objectif */
+/*
+cf. explications à suivre dans le contenu HTML/
+*/
+
+
+/* Reset and deco */
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 2rem auto;
+  background: #fff;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-size: 1.8rem;
+  line-height: 1.5;
+}
+
+.full-bleed {
+  background: chocolate;
+  color: #fff;
+}
+
+.deco {
+  background: url(brit.jpg) center;
+  background-size: cover;
+  text-shadow: 0 1px 1px #000;
+}
+
+
+
+
+/* Solution 1 */
+
+
+
+/* Solution 2 */
+
+
+

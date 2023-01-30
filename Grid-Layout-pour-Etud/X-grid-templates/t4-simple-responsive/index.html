@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="utf-8">
+		<meta name="description" content="Description">
+		<title>Document</title>
+		<link rel="stylesheet" href="screen.css">
+	</head>
+	<body>
+		<h1>
+			Simple Responsive Grid Layout
+		</h1>
+		<p>
+			A common approach to creating a responsive grid layout is to use media queries at appropriate breakpoints to vary the width of the grid items so content in each grid item is displayed in an optimal manner. For example, if we wanted 2 columns when the screen size was larger than 480px, 3 columns when the screen size was larger than 720px and so on, we would end up having to write multiple media queries.
+		</p>
+		<p>
+			<b>With Grid, we can simply specify the minimum width of each grid item, then let the browser generate enough columns to fit the width of the container.</b> The <code>minmax()</code> function also allows us to specify a fluid width for the maximum value, so in instances where there is excess free space in the grid container, the grid items can grow to take up that additional space. This means the grid items will always take up the width of the grid container.
+		</p>
+		<p>
+			Using the <code>auto-fill</code> value within the <code>repeat()</code> notation tells the browser to generate as many columns as necessary to fit the grid items within the width of the grid container. In this case, we’ve set the minimum width of a grid item to be <code>15ch</code>.
+		</p>
+		<div class="container">
+		  <div class="grid__item a">A</div>
+		  <div class="grid__item b">B</div>
+		  <div class="grid__item c">C</div>
+		  <div class="grid__item d">D</div>
+		  <div class="grid__item e">E</div>
+		  <div class="grid__item f">F</div>
+		  <div class="grid__item g">G</div>
+		  <div class="grid__item h">H</div>
+		  <div class="grid__item i">I</div>
+		  <div class="grid__item j">J</div>
+		  <div class="grid__item k">K</div>
+		  <div class="grid__item l">L</div>
+		</div>
+	</body>
+</html>

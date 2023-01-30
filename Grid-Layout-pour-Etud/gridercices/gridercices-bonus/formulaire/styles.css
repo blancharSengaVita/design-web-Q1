@@ -1,0 +1,60 @@
+/* Formulaire et Grid Layout */
+
+/* 
+PARTIE 1
+1- Construisez une grille de deux colonnes dont la première a une largeur de 18 caractères et la seconde occupe l'espace restant
+2- Disposez tous les labels à gauche et les autres éléments à droite
+
+PARTIE 2
+Testez les variantes contraintes suivantes :
+1- La deuxième colonne doit maintenant : toujours faire au minimum 18ch et s'agrandir si elle a de la place
+2a- La première colonne occupe aussi l'espace disponible
+2b- La première colonne occupe la taille de son contenu
+2c- La première colonne s'adapte à la taille maximale de son contenu
+
+*/
+
+/* Correction partie 1 */
+
+
+/* Correction partie 2 */
+
+
+/* Reset et Déco */
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 2rem;
+  background: #fff;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-size: 1.8rem;
+  line-height: 1.5;
+}
+
+input,
+textarea {
+  padding: .5em;
+  min-width: 0;
+  border: 0;
+  box-shadow: 0 0 0 1px #aaa;
+  border-radius: 4px;
+  font-size: inherit;
+}
+
+input[type="submit"] {
+  padding: .5em 1em;
+  background: #aaa;
+  color: #fff;
+  font-size: inherit;
+  border-radius: 4px;
+  cursor: pointer;
+}
+

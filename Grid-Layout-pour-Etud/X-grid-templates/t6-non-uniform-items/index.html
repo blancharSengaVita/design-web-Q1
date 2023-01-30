@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="utf-8">
+		<meta name="description" content="Description">
+		<title>Document</title>
+		<link rel="stylesheet" href="screen.css">
+	</head>
+	<body>
+		<h1>
+			Grids With Non-uniform Items
+		</h1>
+		<p>
+	      Even though the concept of a grid is orderly and uniform, there are some tricks we can employ to introduce an element of randomness to items laid out in a grid. The Cicada Principle was introduced by <a href="https://twitter.com/alexmwalker">Alex Walker</a> in his article <a href="https://www.sitepoint.com/the-cicada-principle-and-why-it-matters-to-web-designers/">The Cicada Principle and Why It Matters to Web Designers</a> back in 2011. The gist of it is that using a pattern of prime numbers can help create the illusion of randomness.
+	  	</p>
+	  	<p>
+	      The default alignment for the content within grid items behaves as if it is set to <code>stretch</code>. This means, the content will stretch to fit the edges of the grid item. We can also change their values to <code>start</code>, <code>center</code> or <code>end</code>.
+	  	</p>
+	  	<p>
+	      For this example, we have a number of images and some corresponding text per grid item. We will create 4 equal width columns, but let the row height be determined by the height of the content. Each row will then take the height of the tallest grid item in that row. Because every grid item has varying content, we can apply different <code>align-self</code> values to “random” grid items using the nth-child selector.
+	  	</p>
+	  	
+		<div class="container">
+		  <div class="grid__item"><img src="http://placehold.it/175x150?text=Image">Here is some text.</div>
+		  <div class="grid__item"><img src="http://placehold.it/175x100?text=Image">Here is some text. Some items have more.</div>
+		  <div class="grid__item"><img src="http://placehold.it/175x250?text=Image">Here is some text.</div>
+		  <div class="grid__item"><img src="http://placehold.it/175x150?text=Image">Here is some text.</div>
+		  <div class="grid__item"><img src="http://placehold.it/175x200?text=Image">Here is some text. Some items have more.</div>
+		  <div class="grid__item"><img src="http://placehold.it/175x200?text=Image">Here is some text.</div>
+		  <div class="grid__item"><img src="http://placehold.it/175x150?text=Image">Here is some text.</div>
+		  <div class="grid__item"><img src="http://placehold.it/175x250?text=Image">Here is some text. Some items have more.</div>
+		  <div class="grid__item"><img src="http://placehold.it/175x250?text=Image">Here is some text.</div>
+		  <div class="grid__item"><img src="http://placehold.it/175x150?text=Image">Here is some text.</div>
+		  <div class="grid__item"><img src="http://placehold.it/175x200?text=Image">Here is some text.</div>
+		  <div class="grid__item"><img src="http://placehold.it/175x200?text=Image">Here is some text.</div>
+		  <div class="grid__item"><img src="http://placehold.it/175x100?text=Image">Here is some text. Some items have more.</div>
+		  <div class="grid__item"><img src="http://placehold.it/175x150?text=Image">Here is some text.</div>
+		</div>
+	</body>
+</html>

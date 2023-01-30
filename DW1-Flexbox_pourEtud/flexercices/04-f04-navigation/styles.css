@@ -1,0 +1,81 @@
+/* Decoration */
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  margin: 2rem;
+  background: #fff;
+  font-family: arial, sans-serif;
+  font-size: 1.8em;
+}
+
+nav {
+  width: 80%;
+  margin: auto;
+  padding: 1rem;
+  border-radius: 1rem;
+  color: #fff;
+  background: beige;
+}
+
+nav a {
+  background: dodgerblue;
+}
+
+nav a + a {
+  background: orange;
+}
+
+nav a + a + a {
+  background: olivedrab;
+}
+
+nav a + a + a + a {
+  background: hotpink;
+}
+
+nav a + a + a + a + a {
+  background: slategray;
+}
+
+nav a {
+  padding: 1rem;
+  color: #fff;
+  text-decoration: none;
+  border: 1px solid #fff;
+}
+
+/* Objectif */
+
+/*
+- le premier lien doit avoir être arrondi à sa gauche
+- le dernier lien doit avoir être arrondi à sa droite
+- les liens doivent s'afficher côte à côte, sans espace
+- les liens doivent se répartir dans toute la surface de nav
+- au survol et au focus d'un lien, il doit doubler de taille
+- le tout en transition !
+*/
+
+nav a:first-of-type {
+  border-radius: 1rem 0 0 1rem;
+}
+
+nav a:last-of-type {
+  border-radius:  0 1rem 1rem 0;
+}
+
+nav {
+  display: flex;
+}
+
+a {
+  flex: 1;
+}
+
+a:hover {
+  flex: 2;
+}
+
+

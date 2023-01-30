@@ -1,0 +1,70 @@
+/*
+Alignement en croix via Flexbox.
+
+Il est très simple de réaliser ce genre de composition grâce à Flexbox.
+
+Le principe est celui-ci :
+- le conteneur flex distribue ses enfants horizontalement (flex-direction: row)
+  et les autorise à passer à la ligne (flex-wrap: wrap) ;
+- tous les enfants ont une largeur fixée à 33% (flex: 0 0 33.33%) ;
+- le premier et le dernier créent un “offset”
+  tout simplement grâce à des marges latérales (margin: 0 33.33%).
+*/
+
+/* Decoration */
+
+body {
+  margin: 20px;
+  background: #fff;
+  font-family: "Century Gothic", helvetica, arial, sans-serif;
+  font-size: 1.1em;
+}
+ul {
+  border-radius: 20px;
+}
+li {
+  padding: 10px;
+  border-radius: 20px;
+  color: #fff;
+  text-align: center;
+}
+li:first-of-type {
+  background: dodgerblue;
+}
+li:nth-of-type(2) {
+  background: orange;
+}
+li:nth-of-type(3) {
+  background: olivedrab;
+}
+li:nth-of-type(4) {
+  background: hotpink;
+}
+li:nth-of-type(5) {
+  background: slategray;
+}
+li {
+  padding: .7em;
+  color: #fff;
+}
+h1 {
+  margin: 1em 0;
+  color: #345;
+  text-shadow: 0 1px 1px #fff;
+  text-align: center;
+  font-family: georgia, "trebuchet ms", arial, serif;
+}
+p {
+  text-align: center;
+}
+
+/* Layout : À VOUS ! */
+
+html {
+  box-sizing: border-box;
+}
+*{
+  box-sizing: inherit;
+}
+
+

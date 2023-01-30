@@ -1,0 +1,47 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  padding: 1rem;
+  border-radius: 1rem;
+  border: 4px solid #555;
+  background: ivory;
+}
+.item {
+  width: 6rem;
+  height: 6rem;
+  border-radius: 1rem;
+  border: 4px solid #555;
+}
+
+.item-1 {
+  background-color: pink;
+}
+
+.item-2 {
+  background-color: powderblue;
+}
+
+.item-3 {
+  background-color: darkseagreen;
+}
+
+/* 
+Défi : centrage paradoxal
+
+L'objectif tient en ces points :
+1- .container doit occuper toute la hauteur de fenêtre ainsi que la largeur de ses items, il doit être centré horizontalement.
+2- placement des items :
+- item-3 (vert) doit être placé tout en bas de son parent
+- item-2 (bleu) doit être exactement centré dans son parent (pas dans l'espace restant)
+- item-1 (rose) doit se placer au-dessus de item-2
+
+*/
+
+
+

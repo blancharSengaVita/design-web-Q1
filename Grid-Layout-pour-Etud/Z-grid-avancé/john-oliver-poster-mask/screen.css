@@ -1,0 +1,18 @@
+/* 
+SOURCE : https://codepen.io/andybarefoot/full/wrXvLj
+*/
+/*
+1. COULEURS :
+  - #124559
+  - #D3E6D9
+  - rgba(64,67,78,0.4)
+2. POLICES :
+  - Roboto Slab
+  - Rozha One
+3. Dimensions :
+  - tout st en vw (y compris les font-size)
+  - font-size : body : 1.8vw, John Oliver : 5vw et 7.5vw;
+  - grille :
+    * hauteur des lignes : 5vw, gouttière : 1vw;
+    * les colonnes sont toutes à la même largeur sauf les deux extérieures (1/3 de la taille de autres)
+*/

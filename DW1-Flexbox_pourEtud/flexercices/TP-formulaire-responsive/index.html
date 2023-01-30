@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" media="all" href="styles.css" />
+    <title>formulaire responsive</title>
+</head>
+
+
+<body>
+
+    <h1>Mon beau formulaire</h1>
+
+    <form action="destination.php">
+        <div class="first">
+            <p><label for="comm">Dites-nous tout&nbsp;!</label></p>
+            <textarea id="comm" cols="10" rows="5">Je suis un textarea dont la hauteur se calcule par rapport au bloc de contenu à ma gauche.</textarea>
+        </div>
+
+        <div class="second">
+            <p>Vous :</p>
+            <p>
+                <label for="nom">Nom&nbsp;: </label>
+                <input type="text" id="nom" autofocus>
+            </p>
+            <p>
+                <label for="prenom">Prénom&nbsp;: </label>
+                <input type="text" id="prenom">
+            </p>
+            <p>
+                <label for="email">E-mail&nbsp;: </label>
+                <input type="email" id="email">
+            </p>
+            <p><small contenteditable>(ceci est un texte bidon de remplissage, juste pour étirer la hauteur de ce bloc de contenu) On aurait dit que j'ai lu toutes les conditions et les trucs écrits en tout petit dans les CGU et je n'ai même pas peur de cliquer sur le bouton "envoyer".</small></p>
+            <p>
+                <input type="submit" value="Envoyer">
+            </p>
+        </div>
+
+
+    </form>
+
+</body>
+
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="utf-8">
+		<meta name="description" content="Description">
+		<title>Document</title>
+		<link rel="stylesheet" href="screen.css">
+	</head>
+	<body>
+		<h1>Responsive Grid with Differently Sized Items</h1>
+		<p>
+			Grid’s auto-placement algorithm can place grid items even if they are not uniformly sized. In addition, we can specify whether we want the grid items to fill up in order or let the browser try to fill in blank spaces in the grid with items that can fit.
+		</p>
+		<p>
+			We can use the grid-auto-flow property to control which algorithm is being used.
+		</p>
+		<p>
+			By default, <code>grid-auto-flow</code> uses the sparse algorithm to place grid items. Check the checkbox to change it to dense and see how the grid items become tightly packed.
+		</p>
+		<input type="checkbox" class="flow-switcher" id="dense">
+		<label for="dense">grid-auto-flow: dense</label>
+		<div class="container">
+		  <div class="grid__item a">A</div>
+		  <div class="grid__item b">B</div>
+		  <div class="grid__item c">C</div>
+		  <div class="grid__item d">D</div>
+		  <div class="grid__item e">E</div>
+		  <div class="grid__item f">F</div>
+		  <div class="grid__item g">G</div>
+		  <div class="grid__item h">H</div>
+		  <div class="grid__item i">I</div>
+		  <div class="grid__item j">J</div>
+		  <div class="grid__item k">K</div>
+		  <div class="grid__item l">L</div>
+		  <div class="grid__item m">M</div>
+		  <div class="grid__item n">N</div>
+		</div>
+	</body>
+</html>

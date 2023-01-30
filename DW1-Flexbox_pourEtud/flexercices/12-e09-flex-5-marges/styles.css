@@ -1,0 +1,58 @@
+/*
+Marges automatiques
+“Les marges automatiques, c'est pas automatique… mais c'est rudement pratique !”
+
+En dehors du célébrissime margin: auto pour centrer horizontalement (et verticalement dans Flexbox), connaissiez-vous les bienfaits de margin-left: auto et margin-top: auto ? (que ce soit dans un contexte Flexbox ou non d'ailleurs)
+
+Ces astuces vous permettront de réaliser très facilement quelques prouesses de positionnements en vous passant de flottants ou de positions absolues.
+*/
+
+/* Decoration */
+
+body {
+	margin: 1em;
+	background: #fff;
+	font-family: "Century Gothic", helvetica, arial, sans-serif;
+	font-size: 1em;
+}
+nav,
+section {
+	padding: 10px;
+	border: 2px solid #ddd;
+	border-radius: 6px;
+}
+section {margin-top: 1em;}
+a,
+section h1, 
+footer {
+	padding: 10px;
+	border-radius: 6px;
+	color: #fff;
+	background: dodgerblue;
+	text-decoration: none;
+}
+section h1 {
+	margin: 0 0 1em;
+}
+a:last-of-type,
+footer {
+	background: olivedrab;
+}
+
+body > h1,
+body > h2 {
+	margin: 1em 0;
+	color: #345;
+	text-shadow: 0 1px 1px #fff;
+	text-align: left;
+	font-family: georgia, "trebuchet ms", arial, serif;
+}
+
+/* Layout : À VOUS ! */
+
+html {
+	box-sizing: border-box;
+}
+*{
+	box-sizing: inherit;
+}
